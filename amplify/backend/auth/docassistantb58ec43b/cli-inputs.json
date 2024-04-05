@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "docassistanta2f5c23d_identitypool_a2f5c23d",
-    "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "docassa2f5c23d",
-    "userPoolName": "docassistanta2f5c23d_userpool_a2f5c23d",
+    "identityPoolName": "docassistantb58ec43b_identitypool_b58ec43b",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "docassb58ec43b",
+    "userPoolName": "docassistantb58ec43b_userpool_b58ec43b",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "docassa2f5c23d_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "docassb58ec43b_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "a2f5c23d",
-    "resourceName": "docassistanta2f5c23d",
+    "sharedId": "b58ec43b",
+    "resourceName": "docassistantb58ec43b",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
     "usernameAttributes": [
@@ -43,20 +43,6 @@
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true,
-    "authRoleArn": {
-      "Fn::GetAtt": [
-        "AuthRole",
-        "Arn"
-      ]
-    },
-    "unauthRoleArn": {
-      "Fn::GetAtt": [
-        "UnauthRole",
-        "Arn"
-      ]
-    },
-    "breakCircularDependency": true,
-    "dependsOn": []
+    "useEnabledMfas": true
   }
 }
