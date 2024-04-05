@@ -1,0 +1,17 @@
+{
+  "resourceName": "s33444f1d1",
+  "policyUUID": "3444f1d1",
+  "bucketName": "docassistantd3fb043cc9e649b38e1b3d9f693ef153",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "groupAccess": {}
+}
