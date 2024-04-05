@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-docassistant-staging-b0b54-authRole",
+      "UnauthRoleArn": "arn:aws:iam::179212672762:role/amplify-docassistant-staging-b0b54-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::179212672762:role/amplify-docassistant-staging-b0b54-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-docassistant-staging-b0b54-deployment",
+      "UnauthRoleName": "amplify-docassistant-staging-b0b54-unauthRole",
+      "StackName": "amplify-docassistant-staging-b0b54",
+      "StackId": "arn:aws:cloudformation:us-east-1:179212672762:stack/amplify-docassistant-staging-b0b54/30e07450-f355-11ee-a2f5-1292b3c00365",
+      "AmplifyAppId": "d2phquskwtign0"
+    }
+  }
+}
