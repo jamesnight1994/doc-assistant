@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Badge, Flex, Text } from "@aws-amplify/ui-react";
+import { Button, Flex, SwitchField, Text } from "@aws-amplify/ui-react";
 export default function ItemCard(props) {
   const { overrides, ...rest } = props;
   return (
@@ -19,34 +19,36 @@ export default function ItemCard(props) {
       justifyContent="flex-start"
       alignItems="flex-start"
       position="relative"
+      borderRadius="8px"
       padding="16px 16px 16px 16px"
-      backgroundColor="rgba(255,255,255,1)"
+      backgroundColor="rgba(250,250,250,1)"
       {...getOverrideProps(overrides, "ItemCard")}
       {...rest}
     >
-      <Badge
-        width="unset"
-        height="unset"
-        gap="0"
-        shrink="0"
-        size="small"
-        variation="success"
-        children="New!"
-        {...getOverrideProps(overrides, "Badge")}
-      ></Badge>
       <Flex
-        gap="0"
+        gap="14px"
         direction="row"
         width="unset"
         height="unset"
-        justifyContent="space-between"
+        justifyContent="flex-start"
         alignItems="center"
         shrink="0"
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 417")}
+        {...getOverrideProps(overrides, "Content")}
       >
+        <SwitchField
+          width="unset"
+          height="unset"
+          shrink="0"
+          label=""
+          size="large"
+          defaultChecked={false}
+          isDisabled={false}
+          labelPosition="end"
+          {...getOverrideProps(overrides, "SwitchField")}
+        ></SwitchField>
         <Flex
           gap="0"
           direction="column"
@@ -54,10 +56,12 @@ export default function ItemCard(props) {
           height="unset"
           justifyContent="flex-start"
           alignItems="flex-start"
-          shrink="0"
+          grow="1"
+          shrink="1"
+          basis="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Product Title")}
+          {...getOverrideProps(overrides, "TextContent")}
         >
           <Text
             fontFamily="Inter"
@@ -74,11 +78,12 @@ export default function ItemCard(props) {
             gap="unset"
             alignItems="unset"
             shrink="0"
+            alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="T-Shirt"
-            {...getOverrideProps(overrides, "T-Shirt")}
+            children="Title"
+            {...getOverrideProps(overrides, "Name")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -96,34 +101,24 @@ export default function ItemCard(props) {
             gap="unset"
             alignItems="unset"
             shrink="0"
+            alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Classic Long Sleeve"
-            {...getOverrideProps(overrides, "Classic Long Sleeve")}
+            children="Description text"
+            {...getOverrideProps(overrides, "Description")}
           ></Text>
         </Flex>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="800"
-          color="rgba(13,26,38,1)"
-          lineHeight="20px"
-          textAlign="right"
-          display="block"
-          direction="column"
-          justifyContent="unset"
+        <Button
           width="unset"
           height="unset"
-          gap="unset"
-          alignItems="unset"
           shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="$99"
-          {...getOverrideProps(overrides, "$99")}
-        ></Text>
+          size="default"
+          isDisabled={false}
+          variation="link"
+          children="✕"
+          {...getOverrideProps(overrides, "DeleteButton")}
+        ></Button>
       </Flex>
     </Flex>
   );

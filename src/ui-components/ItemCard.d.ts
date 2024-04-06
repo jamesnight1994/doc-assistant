@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { BadgeProps, FlexProps, TextProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps, SwitchFieldProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -19,12 +19,12 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type ItemCardOverridesProps = {
     ItemCard?: PrimitiveOverrideProps<FlexProps>;
-    Badge?: PrimitiveOverrideProps<BadgeProps>;
-    "Frame 417"?: PrimitiveOverrideProps<FlexProps>;
-    "Product Title"?: PrimitiveOverrideProps<FlexProps>;
-    "T-Shirt"?: PrimitiveOverrideProps<TextProps>;
-    "Classic Long Sleeve"?: PrimitiveOverrideProps<TextProps>;
-    $99?: PrimitiveOverrideProps<TextProps>;
+    Content?: PrimitiveOverrideProps<FlexProps>;
+    SwitchField?: PrimitiveOverrideProps<SwitchFieldProps>;
+    TextContent?: PrimitiveOverrideProps<FlexProps>;
+    Name?: PrimitiveOverrideProps<TextProps>;
+    Description?: PrimitiveOverrideProps<TextProps>;
+    DeleteButton?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
 export declare type ItemCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: ItemCardOverridesProps | undefined | null;

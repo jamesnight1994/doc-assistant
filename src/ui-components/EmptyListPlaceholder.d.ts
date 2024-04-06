@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { IconProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps, HeadingProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -17,12 +17,13 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type MyIconOverridesProps = {
-    MyIcon?: PrimitiveOverrideProps<IconProps>;
+export declare type EmptyListPlaceholderOverridesProps = {
+    EmptyListPlaceholder?: PrimitiveOverrideProps<FlexProps>;
+    Heading?: PrimitiveOverrideProps<HeadingProps>;
+    Description?: PrimitiveOverrideProps<TextProps>;
+    Button?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
-export declare type MyIconProps = React.PropsWithChildren<Partial<IconProps> & {
-    type?: "alert" | "arrow-right" | "bookmark_border" | "chat" | "chat-bubble-outline" | "checkmark" | "close" | "delete" | "edit" | "favorite" | "favorite_border" | "group" | "info" | "more_horiz" | "more_vert" | "reply" | "send" | "share" | "shopping_bag" | "shuffle" | "warning";
-} & {
-    overrides?: MyIconOverridesProps | undefined | null;
+export declare type EmptyListPlaceholderProps = React.PropsWithChildren<Partial<FlexProps> & {
+    overrides?: EmptyListPlaceholderOverridesProps | undefined | null;
 }>;
-export default function MyIcon(props: MyIconProps): React.ReactElement;
+export default function EmptyListPlaceholder(props: EmptyListPlaceholderProps): React.ReactElement;

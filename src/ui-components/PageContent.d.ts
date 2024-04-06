@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { IconProps } from "@aws-amplify/ui-react";
+import { FlexProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -17,12 +17,12 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type MyIconOverridesProps = {
-    MyIcon?: PrimitiveOverrideProps<IconProps>;
+export declare type PageContentOverridesProps = {
+    PageContent?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
-export declare type MyIconProps = React.PropsWithChildren<Partial<IconProps> & {
-    type?: "alert" | "arrow-right" | "bookmark_border" | "chat" | "chat-bubble-outline" | "checkmark" | "close" | "delete" | "edit" | "favorite" | "favorite_border" | "group" | "info" | "more_horiz" | "more_vert" | "reply" | "send" | "share" | "shopping_bag" | "shuffle" | "warning";
+export declare type PageContentProps = React.PropsWithChildren<Partial<FlexProps> & {
+    breakpoint?: "medium" | "small";
 } & {
-    overrides?: MyIconOverridesProps | undefined | null;
+    overrides?: PageContentOverridesProps | undefined | null;
 }>;
-export default function MyIcon(props: MyIconProps): React.ReactElement;
+export default function PageContent(props: PageContentProps): React.ReactElement;

@@ -1,0 +1,11 @@
+type Document @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  collectionID: ID! @index(name: "byCollection")
+}
+
+type Collection @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  Documents: [Document] @hasMany(indexName: "byCollection", fields: ["id"])
+}
