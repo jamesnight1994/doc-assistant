@@ -50,5 +50,13 @@
       "service": "Cognito"
     }
   },
+  "predictions": {
+    "identifyTextd05ac4e4": {
+      "dependsOn": [],
+      "identifyType": "identifyText",
+      "providerPlugin": "awscloudformation",
+      "service": "RekognitionAndTextract"
+    }
+  },
   "storage": {}
 }
