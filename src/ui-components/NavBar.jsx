@@ -44,7 +44,7 @@ export default function NavBar(props) {
           height="unset"
           shrink="0"
           level="4"
-          children="Todo App"
+          children="Doc Assistant"
           {...getOverrideProps(overrides, "Heading")}
         ></Heading>
         <Button
