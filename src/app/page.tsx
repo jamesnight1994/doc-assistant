@@ -2,7 +2,7 @@
 
 import NavBar from "@/ui-components/NavBar"
 import PageContent from "@/ui-components/PageContent";
-import { Divider, Flex } from "@aws-amplify/ui-react"
+import { Divider, Flex, Input } from "@aws-amplify/ui-react"
 import { StorageManager } from "@aws-amplify/ui-react-storage";
 import { useState } from "react";
 
@@ -43,10 +43,10 @@ export default function Home() {
           }}
         >
           <div style={{ display: showCreateDoc ? 'block' : 'none' }}>
-            <StorageManager accessLevel={"guest"} maxFileCount={0} />
+            <Divider label="Upload image to get started"/> <br />
+            <Input type="file"/>
 
           </div>
-          <Divider style={{ display: showCreateDoc ? 'block' : 'none' }} orientation="horizontal" />
           
         </PageContent >
       </Flex>

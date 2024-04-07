@@ -12,12 +12,12 @@
       "AmplifyAppId": "d2phquskwtign0"
     },
     "categories": {
-      "storage": {
-        "s33444f1d1": {}
-      },
       "auth": {
         "docassistant050e21dd": {},
         "docassistantb58ec43b": {}
+      },
+      "api": {
+        "docassistant": {}
       }
     }
   }
