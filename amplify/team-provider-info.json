@@ -21,6 +21,12 @@
       },
       "predictions": {
         "identifyTextd05ac4e4": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2phquskwtign0",
+          "type": "manual"
+        }
       }
     }
   }
